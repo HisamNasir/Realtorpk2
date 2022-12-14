@@ -1,4 +1,46 @@
+body{
+    margin: 0px;
+    background: yellow;
+}
+#container{
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 20px;
+}
+#firstsection{
+    background-color: white ;
+    height: 80vh;
+    display: grid;
+    align-items: center;
+}
 .topnav{
-    background-color: aqua;
-
+    background: red;
+    padding: 10px;
+    }
+.contenttitle{
+    display: grid;
+    justify-content: center;
+}
+.topviewproject{
+    background: gray;
+    
+}
+.topviewprojecttable{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background: red;
+}
+.moveinnow{
+    background: gray;
+    
+}
+.moveinnowtable{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background: red;
+}
+.card{
+    margin: 2px;
+    background: silver;
+    padding: 10px;
 }
