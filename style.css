@@ -1,46 +1,242 @@
-body{
+body {
     margin: 0px;
-    background: yellow;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-#container{
-    margin-left: 200px;
-    margin-right: 200px;
+
+nav{
+    
+}
+
+hr {
+    border: 1px solid rgb(234, 231, 231);
+    margin: 0px;
+}
+
+#fixed{
+    
+  overflow: hidden;
+  position: fixed;
+}
+#container {
+    margin-left: 250px;
+    margin-right: 250px;
     margin-top: 20px;
 }
-#firstsection{
-    background-color: white ;
-    height: 80vh;
+
+#containertop {
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 3px;
+}
+
+#firstsection {
+    background-color: white;
+    height: 70vh;
     display: grid;
     align-items: center;
 }
-.topnav{
+.active:hover{
+    color: #732dd9;
+    cursor: pointer;
+}
+.active {
+    margin-top: 16px;
+    margin-right: 30px;
+}
+.counter {
+    color: white;
+  
+    z-index: 2;
+    align-items: center;
+    flex: auto;
+    width: fit-content;
+    position: absolute;
+    bottom: 1vh;
+    left: 1vh;
+    border-radius: 20px;
+    font-size: smaller;
+  }
+  
+.topnavright {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+.image {
+    object-fit: cover;
+    height: 310px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .svghot{
+    scale: 1;
+    color: red;
+    height: 10px;
+    width: auto;
+  }
+  .roundbtn {
+    background-color: white;
+    color: #732dd9;
+    padding: 2px;
+    z-index: 2;
+    align-items: center;
+    flex: auto;
+    display: ;
+    width: fit-content;
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    border-radius: 10px;
+    padding: 9px;
+    font-size: large;
+  }
+  
+  .cardtop {
+    position: relative;
+    margin-bottom: 10px;
+    
+    height: 310px;
+  }
+  .activea:hover{
+        border-style: solid;
+        border-width: 1px;
+        padding: 8px;
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        margin: 8px;
+        background: #732dd9;
+        color: white;
+        cursor: pointer;
+  }
+.activea {
+    border-style: solid;
+    border-width: 1px;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    margin: 8px;
+    color: #732dd9;
+    
+}
+
+.topnav {
     background: red;
-    padding: 10px;
-    }
-.contenttitle{
+    align-items: center;
+    margin: 2px;
+    font-weight: normal;
+    display: flex;
+    font-size: 11pt;
+    background-color: white;
+    color: rgb(105, 105, 105);
+}
+.coverphoto {
+    width: 100%;
+    height: auto;
+  }
+  .heading{
+    font-size: 35pt;
+    font-weight:bolder;
+  }
+  .quote{
+    
+    color: rgb(105, 105, 105);
+  }
+.city {
+    border-color: lightgray;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  .property {
+    border-color: lightgray;
+  }
+  .price {
+    border-color: lightgray;
+  }
+  .search {
+    border-color: lightgray;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  select {
+    padding: 15px;
+    border-radius: 0%;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 50px;
+    font-size: 12pt;
+    color: gray;
+  }
+  
+button {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: #732dd9;
+    text-align: center;
+    font-size: 15pt;
+    color: white;
+    border: none;
+  }
+.filter {
+    justify-content: center;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+.contenttitle {
     display: grid;
     justify-content: center;
+    text-align: center;
+    align-items: center;
 }
-.topviewproject{
-    background: gray;
-    
+
+.topviewproject {
+    border: 0px solid rgb(190, 190, 190);
 }
-.topviewprojecttable{
+
+.topviewprojecttable {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    background: red;
 }
-.moveinnow{
-    background: gray;
-    
+
+.moveinnow {
+
 }
-.moveinnowtable{
+
+.moveinnowtable {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    background: red;
+    grid-template-columns: auto auto auto;
+
 }
-.card{
+
+.card {
     margin: 2px;
-    background: silver;
     padding: 10px;
+    margin: 2px;
+    border: 0px solid rgb(190, 190, 190);
+    border-radius: 20px;
+    margin: 2px;
 }
+h2{
+    margin-bottom: 1px;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+
+    #container {
+      padding-top: 10px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  
+
+  
+  
+  }
