@@ -9,7 +9,7 @@ nav{
 }
 
 hr {
-    border: 1px solid rgb(234, 231, 231);
+    border: 1px solid rgba(234, 231, 231, 0.474);
     margin: 0px;
 }
 
@@ -69,27 +69,32 @@ hr {
     width: 100%;
     border-radius: 10px;
   }
-  .svghot{
-    scale: 1;
+  .offersvg{
     color: red;
-    height: 10px;
-    width: auto;
+    height: 15px;
+    width: 15px;
+    position: relative;
+    align-items: center;
+  }
+  .offer{
+
+    position: relative;
+    align-items: center;
+    color: #732dd9;
   }
   .roundbtn {
     background-color: white;
-    color: #732dd9;
-    padding: 2px;
-    z-index: 2;
+    display: flex;
+    
     align-items: center;
     flex: auto;
-    display: ;
     width: fit-content;
     position: absolute;
     bottom: 4px;
     right: 4px;
-    border-radius: 10px;
-    padding: 9px;
-    font-size: large;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: small;
   }
   
   .cardtop {
@@ -139,6 +144,11 @@ hr {
   .heading{
     font-size: 35pt;
     font-weight:bolder;
+  }
+  .table {
+
+    display: grid;
+    grid-template-columns: auto auto auto;
   }
   .quote{
     
@@ -213,7 +223,19 @@ button {
     grid-template-columns: auto auto auto;
 
 }
-
+.cardsblk {
+    padding: 10px;
+    color: black;
+    position: relative;
+    width: fit-content;
+    border: rgb(237, 237, 237);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    width: auto;
+  
+    margin: 10px;
+  }
 .card {
     margin: 2px;
     padding: 10px;
@@ -237,6 +259,9 @@ h2{
     }
   
 
-  
+    .table {
+        overflow-x: scroll;
+      
+      }
   
   }
