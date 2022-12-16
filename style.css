@@ -4,8 +4,6 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-nav {}
-
 hr {
   border: 1px solid rgba(234, 231, 231, 0.474);
   margin: 0px;
@@ -54,12 +52,34 @@ hr {
   border-radius: 20px;
   font-size: smaller;
 }
-
+#mySidebar{
+  display: none;
+  height: 100vh;
+  
+}
+#navbar{
+  background: white;
+  border-bottom: 1px solid silver;
+  position: fixed;
+  z-index: 100;
+  padding: 4px;
+  width: 100%;
+}
 .topnavright {
   width: 100%;
   display: flex;
   justify-content: right;
 }
+.burgermenuebtn{
+  border: none;
+  background: white;
+}
+
+.searchbtn{
+  border: none;
+  background: white;
+}
+
 
 .image {
   object-fit: cover;
@@ -198,9 +218,10 @@ hr {
 }
 
 .search {
-  border-color: lightgray;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  padding-left:40px ;
+  padding-right:40px ;
+  background: #732dd9; color: white;
+  border:none
 }
 
 select {
@@ -213,18 +234,6 @@ select {
   color: gray;
 }
 
-button {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  padding: 15px;
-  padding-left: 50px;
-  padding-right: 50px;
-  background: #732dd9;
-  text-align: center;
-  font-size: 15pt;
-  color: white;
-  border: none;
-}
 
 .filter {
   justify-content: center;
@@ -277,23 +286,31 @@ button {
   margin: 2px;
 }
 
-.burgermenu:hover {
+.mobilemenu:hover {
   color: black;
   
 }
 .burgermenustyle:hover {
   cursor: pointer;
 }
+.searchmenustyle:hover {
+  cursor: pointer;
+}
 h2 {
   margin-bottom: 1px;
 }
 
-.burgermenu {
+.mobilemenu {
   display: none;
   width: 100vw; 
 }
 
 .burgermenustyle {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+.searchmenustyle {
   width: 30px;
   height: 30px;
   display: block;
@@ -320,7 +337,7 @@ h2 {
   #containertop {
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: 3px;
+    
   }
   .cardsblk {
     padding: 10px;
@@ -355,13 +372,15 @@ h2 {
 
 #firstsection {
   background-color: white;
-  height: 70vh;
+  height: 60vh;
+  margin-top: 90px;
   display: grid;
   align-items: center;
   width: 2;
 }
 @media only screen and (max-width: 900px) {
   #firstsection{
+      margin-top: 90px;
     display: none;
     height: 0vh;
   }
@@ -372,7 +391,7 @@ h2 {
     display: none;
   }
 
-  .burgermenu {
+  .mobilemenu {
     display: block;
     display: flex;
     justify-content: right;

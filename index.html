@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Realtors Pk</title>
-    <nav>
+    <!-- navbar  -->
+    <nav id="navbar">
         <div class="topnav" id="containertop" >
             <img id="logo" src="https://dev.realtorspk.com/_next/image?url=%2Frealtors-new.svg&w=640&q=75" alt="">
             <div class="topnavright">
@@ -19,11 +20,19 @@
                 <a class="active">User Login</a>
                 <a class="activea">Comercial Properties</a>
             </div>
-            <div class="burgermenu">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="burgermenustyle">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                  </svg>
-                  
+            <div class="mobilemenu">
+                <button class="searchbtn">
+
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="searchmenustyle">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                      </svg>
+                      
+                </button>
+                <button class="burgermenuebtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="burgermenustyle">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg>
+                </button>                  
             </div>
         </div>
     </nav>
@@ -274,24 +283,13 @@
     </div>
 
     </div>
-
-    <div class="test">
-            <div class="circle-wrap">
-                <div class="circle">
-                    <div class="inside-circle">  </div>
-                    <div class="mask half">
-                        <div class="fill">
-                            
-                        </div>
-                    </div>
-                    <div class="mask full">
-                        <div class="fill"></div>
-                     </div>
-
-                </div>
-
-            </div>
-    </div>
+<!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+    <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+    <a href="#" class="w3-bar-item w3-button">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  </div>
 </body>
 </html>
 <script src="scripts.js"></script>
