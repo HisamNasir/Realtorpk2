@@ -6,11 +6,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    
     <title>Realtors Pk</title>
     <!-- navbar  -->
     <nav id="navbar">
-        <div class="topnav" id="containertop" >
-            <img id="logo" src="https://dev.realtorspk.com/_next/image?url=%2Frealtors-new.svg&w=640&q=75" alt="">
+        <div class="topnav" id="containertop">
+            <div class="logosize">
+                <img id="logo" src="https://dev.realtorspk.com/_next/image?url=%2Frealtors-new.svg&w=640&q=75" alt=""/>
+            </div>
+            
             <div class="topnavright">
                 <a class="active">Home<div class="underlinenav"></div></a>
                 <a class="active">Projects <div class="underlinenav"></div></a>
@@ -19,66 +29,75 @@
                 <a class="active">Blogs <div class="underlinenav"></div></a>
                 <a class="active">Contact <div class="underlinenav"></div></a>
                 <a class="active">User Login <div class="underlinenav"></div></a>
-                <a class="activea">Comercial Properties</a>
+                <button class="activea">Commercial Properties</button>
             </div>
             <div class="mobilemenu">
                 <button class="searchbtn">
 
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="searchmenustyle">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                      </svg>
-                      
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="searchmenustyle">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                    </svg>
+
                 </button>
                 <button class="burgermenuebtn">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="burgermenustyle">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                      </svg>
-                </button>                  
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="burgermenustyle">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
             </div>
         </div>
     </nav>
     <hr>
 </head>
-<body >
-    
+
+<body>
+
     <div id="firstsection">
         <div class="contenttitle">
-                <div>
-                    <h1 class="heading">
-                        Best Real Estate Market Place
-                    </h1>
-                    <p class="quote">
-                        We handle everything for you under one roof, now you finally save all the stress, time and extra
-                        hidden costs.
-                    </p>
-                </div>
-                <div class="filter">
-                    <select id="city" class="city">
-                        <option value="volvo">City</option>
-                        <option value="saab">Hangu</option>
-                        <option value="opel">Islamabad</option>
-                        <option value="audi">Murree</option>
-                        <option value="audi">Peshawar</option>
-                        <option value="audi">Rawalpindi</option>
-                    </select>
-                    <select id="property" class="property">
-                        <option value="volvo">Project Type</option>
-                        <option value="saab">Comercial</option>
-                        <option value="opel">Residentail</option>
-                        <option value="audi">MixUse</option>
-                    </select>
-                    <select id="price" class="price">
-                        <option value="volvo">Price Range</option>
-                        <option value="saab">10Lac-1Cr</option>
-                        <option value="opel">30Lac-3Cr</option>
-                        <option value="audi">3Cr-6Cr</option>
-                    </select>
-                    <button class="search">Search</button>
-                </div>
+            <div class="contenttitledata">
+            <div class="titlee">
+                <h1 class="heading">
+                    Best Real Estate Market Place
+                </h1>
+                <p class="quote">
+                    We handle everything for you under one roof, now you finally save all the stress, time and extra
+                    hidden costs.
+                </p>
+            </div>
+            <div class="filter">
+                <select id="city" class="city">
+                    <option value="volvo">City</option>
+                    <option value="saab">Hangu</option>
+                    <option value="opel">Islamabad</option>
+                    <option value="audi">Murree</option>
+                    <option value="audi">Peshawar</option>
+                    <option value="audi">Rawalpindi</option>
+                </select>
+                <select id="property" class="property">
+                    <option value="volvo">Project Type</option>
+                    <option value="saab">Comercial</option>
+                    <option value="opel">Residentail</option>
+                    <option value="audi">MixUse</option>
+                </select>
+                <select id="price" class="price">
+                    <option value="volvo">Price Range</option>
+                    <option value="saab">10Lac-1Cr</option>
+                    <option value="opel">30Lac-3Cr</option>
+                    <option value="audi">3Cr-6Cr</option>
+                </select>
+                <button class="search">Search</button>
+            </div>
+            </div>
+
         </div>
     </div>
-    <img class="coverphoto" src="https://realtorspk.com/_next/static/media/bigHeader.be3fd78b211aecb1b28b117e36e7397e.svg"
-    alt="Cover Photo">
+    <img class="coverphoto"
+        src="https://realtorspk.com/_next/static/media/bigHeader.be3fd78b211aecb1b28b117e36e7397e.svg"
+        alt="Cover Photo">
     <div id="secondsection">
         <div id="container" class="topviewproject">
             <h2>Top Viewed Project</h2>
@@ -88,17 +107,21 @@
                         <img class="image"
                             src="https://realtorspk.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fs2s-mark%2Fimage%2Fupload%2Fc_scale%2Cw_600%2Cq_auto%2Cf_auto%2Fresources%2Fcjd9ynv1mvk8ays5w9yq&w=1920&q=75"
                             alt="">
-                            <div class="roundbtn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        <div class="roundbtn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke-width="1.5" stroke="currentColor" class="offersvg">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" />
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" />
-                            </svg> <div class="offer">Offers</div> </div>
-                          
-        
-                            <div class="counter"><div class="percentagenum">82</div><div class="percentageoutoff">/100</div> 
-                            </div>
+                            </svg>
+                            <div class="offer">Offers</div>
+                        </div>
+
+
+                        <div class="counter">
+                            <div class="percentagenum">82</div>
+                            <div class="percentageoutoff">/100</div>
+                        </div>
                     </div>
                     <div class="cardbottom"> Mall of Hangu</div>
                 </div>
@@ -107,18 +130,20 @@
                         <img class="image"
                             src="https://realtorspk.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fs2s-mark%2Fimage%2Fupload%2Fc_scale%2Cw_600%2Cq_auto%2Cf_auto%2Fresources%2Fcjd9ynv1mvk8ays5w9yq&w=1920&q=75"
                             alt="">
-                            <div class="roundbtn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        <div class="roundbtn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke-width="1.5" stroke="currentColor" class="offersvg">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" />
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" />
-                            </svg> <div class="offer">Offers</div> </div>
-                          
-        
+                            </svg>
+                            <div class="offer">Offers</div>
+                        </div>
+
+
                         <div class="counter">82/100</div>
-        
-                        
+
+
                     </div>
                     <div class="cardbottom"> Mall of Hangu</div>
                 </div>
@@ -127,18 +152,20 @@
                         <img class="image"
                             src="https://realtorspk.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fs2s-mark%2Fimage%2Fupload%2Fc_scale%2Cw_600%2Cq_auto%2Cf_auto%2Fresources%2Fcjd9ynv1mvk8ays5w9yq&w=1920&q=75"
                             alt="">
-                            <div class="roundbtn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        <div class="roundbtn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke-width="1.5" stroke="currentColor" class="offersvg">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" />
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" />
-                            </svg> <div class="offer">Offers</div> </div>
-                          
-        
+                            </svg>
+                            <div class="offer">Offers</div>
+                        </div>
+
+
                         <div class="counter">82/100</div>
-        
-                        
+
+
                     </div>
                     <div class="cardbottom"> Mall of Hangu</div>
                 </div>
@@ -147,18 +174,20 @@
                         <img class="image"
                             src="https://realtorspk.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fs2s-mark%2Fimage%2Fupload%2Fc_scale%2Cw_600%2Cq_auto%2Cf_auto%2Fresources%2Fcjd9ynv1mvk8ays5w9yq&w=1920&q=75"
                             alt="">
-                            <div class="roundbtn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        <div class="roundbtn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke-width="1.5" stroke="currentColor" class="offersvg">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" />
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" />
-                            </svg> <div class="offer">Offers</div> </div>
-                          
-        
+                            </svg>
+                            <div class="offer">Offers</div>
+                        </div>
+
+
                         <div class="counter">82/100</div>
-        
-                        
+
+
                     </div>
                     <div class="cardbottom"> Mall of Hangu</div>
                 </div>
@@ -167,18 +196,20 @@
                         <img class="image"
                             src="https://realtorspk.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fs2s-mark%2Fimage%2Fupload%2Fc_scale%2Cw_600%2Cq_auto%2Cf_auto%2Fresources%2Fcjd9ynv1mvk8ays5w9yq&w=1920&q=75"
                             alt="">
-                            <div class="roundbtn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        <div class="roundbtn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke-width="1.5" stroke="currentColor" class="offersvg">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" />
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" />
-                            </svg> <div class="offer">Offers</div> </div>
-                          
-        
+                            </svg>
+                            <div class="offer">Offers</div>
+                        </div>
+
+
                         <div class="counter">82/100</div>
-        
-                        
+
+
                     </div>
                     <div class="cardbottom"> Mall of Hangu</div>
                 </div>
@@ -187,18 +218,20 @@
                         <img class="image"
                             src="https://realtorspk.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fs2s-mark%2Fimage%2Fupload%2Fc_scale%2Cw_600%2Cq_auto%2Cf_auto%2Fresources%2Fcjd9ynv1mvk8ays5w9yq&w=1920&q=75"
                             alt="">
-                            <div class="roundbtn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        <div class="roundbtn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke-width="1.5" stroke="currentColor" class="offersvg">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" />
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" />
-                            </svg> <div class="offer">Offers</div> </div>
-                          
-        
+                            </svg>
+                            <div class="offer">Offers</div>
+                        </div>
+
+
                         <div class="counter">82/100</div>
-        
-                        
+
+
                     </div>
                     <div class="cardbottom"> Mall of Hangu</div>
                 </div>
@@ -207,18 +240,20 @@
                         <img class="image"
                             src="https://realtorspk.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fs2s-mark%2Fimage%2Fupload%2Fc_scale%2Cw_600%2Cq_auto%2Cf_auto%2Fresources%2Fcjd9ynv1mvk8ays5w9yq&w=1920&q=75"
                             alt="">
-                            <div class="roundbtn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        <div class="roundbtn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke-width="1.5" stroke="currentColor" class="offersvg">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" />
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" />
-                            </svg> <div class="offer">Offers</div> </div>
-                          
-        
+                            </svg>
+                            <div class="offer">Offers</div>
+                        </div>
+
+
                         <div class="counter">82/100</div>
-        
-                        
+
+
                     </div>
                     <div class="cardbottom"> Mall of Hangu</div>
                 </div>
@@ -227,18 +262,20 @@
                         <img class="image"
                             src="https://realtorspk.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fs2s-mark%2Fimage%2Fupload%2Fc_scale%2Cw_600%2Cq_auto%2Cf_auto%2Fresources%2Fcjd9ynv1mvk8ays5w9yq&w=1920&q=75"
                             alt="">
-                            <div class="roundbtn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        <div class="roundbtn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke-width="1.5" stroke="currentColor" class="offersvg">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" />
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" />
-                            </svg> <div class="offer">Offers</div> </div>
-                          
-        
+                            </svg>
+                            <div class="offer">Offers</div>
+                        </div>
+
+
                         <div class="counter">82/100</div>
-        
-                        
+
+
                     </div>
                     <div class="cardbottom"> Mall of Hangu</div>
                 </div>
@@ -249,48 +286,49 @@
 
     </div>
     <div id="thirdsection">
-    <div id="container" class="moveinnow">
-        <h2>Move in now, next year or later</h2>
-        <p>Projects based on your preferred possession date</p>
-        <div class="cardst">
-            <div class="tablecontent">
-                <div class="table">
-                    <div class="cardsblk">
-                        <div> Mall of Hangu</div>
-                        <p>0 Projects</p>
-                        <img class="image2"
-                            src="https://realtorspk.com/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fpublic%2Fimages%2Fready2.880f33066656d4daf715fd23c60741d4.jpg&w=1920&q=75"
-                            alt="">
-                    </div>
-                    <div class="cardsblk">
-                        <div> Mall of Hangu</div>
-                        <p>0 Projects</p>
-                        <img class="image2"
-                            src="https://realtorspk.com/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fpublic%2Fimages%2Fready1.c9635c0a8415ae10a8c8ea989f7ff265.jpg&w=1920&q=75"
-                            alt="">
-                    </div>
-                    <div class="cardsblk">
-                        <div> Mall of Hangu</div>
-                        <p>0 Projects</p>
-                        <img class="image2"
-                            src="https://realtorspk.com/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fpublic%2Fimages%2Fready3.db7041e522ce19c6e362acd150f43cd6.jpg&w=1920&q=75"
-                            alt="">
+        <div id="container" class="moveinnow">
+            <h2>Move in now, next year or later</h2>
+            <p>Projects based on your preferred possession date</p>
+            <div class="cardst">
+                <div class="tablecontent">
+                    <div class="table">
+                        <div class="cardsblk">
+                            <div> Mall of Hangu</div>
+                            <p>0 Projects</p>
+                            <img class="image2"
+                                src="https://realtorspk.com/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fpublic%2Fimages%2Fready2.880f33066656d4daf715fd23c60741d4.jpg&w=1920&q=75"
+                                alt="">
+                        </div>
+                        <div class="cardsblk">
+                            <div> Mall of Hangu</div>
+                            <p>0 Projects</p>
+                            <img class="image2"
+                                src="https://realtorspk.com/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fpublic%2Fimages%2Fready1.c9635c0a8415ae10a8c8ea989f7ff265.jpg&w=1920&q=75"
+                                alt="">
+                        </div>
+                        <div class="cardsblk">
+                            <div> Mall of Hangu</div>
+                            <p>0 Projects</p>
+                            <img class="image2"
+                                src="https://realtorspk.com/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fpublic%2Fimages%2Fready3.db7041e522ce19c6e362acd150f43cd6.jpg&w=1920&q=75"
+                                alt="">
+                        </div>
                     </div>
                 </div>
             </div>
+
+
         </div>
 
-
     </div>
-
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
     </div>
-<!-- Sidebar -->
-<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
-    <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
-    <a href="#" class="w3-bar-item w3-button">Link 1</a>
-    <a href="#" class="w3-bar-item w3-button">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button">Link 3</a>
-  </div>
 </body>
+
 </html>
 <script src="scripts.js"></script>
