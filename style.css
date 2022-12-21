@@ -16,11 +16,6 @@ hr {
   position: fixed;
 }
 
-#container {
-  margin-left: 250px;
-  margin-right: 250px;
-  margin-top: 20px;
-}
 
 #containertop {
   width: 1355px;
@@ -69,7 +64,6 @@ hr {
   
 }
 #navbar{
-  display: flex;
   justify-content: center;
   background: white;
   border-bottom: 0.5px solid rgba(217, 216, 216, 0.431);
@@ -97,33 +91,39 @@ hr {
 }
 
 
-.image {
-  object-fit: cover;
-  height: fit-content;
+.imagex {
+  object-fit:fill;
+  height: 29vh;
   width: 100%;
   border-radius: 10px;
-}
-.image2{
-  object-fit: cover;
   
-  width: 300px;
+}
+.image {
+  object-fit: cover;
+  height: 29vh;
+  width: 100%;
+  border-radius: 10px;
+  
 }
 
+.image2{
+  border-radius:10px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  object-fit: cover;
+  width: auto;
+}
 @media only screen and (min-width: 1920px) {
   .cardsblk {
-
-    padding: 10px;
     color: black;
     position: relative;
     border: rgb(237, 237, 237);
     border-style: solid;
     border-radius: 20px;
-    margin: 10px;
   }
 
   .image2{
-    width: 300px;
-    border-radius: 20px;
+    border-radius:10px;
     object-fit: cover;
   }
 }
@@ -151,8 +151,10 @@ hr {
   flex: auto;
   width: fit-content;
   position: absolute;
-  bottom: 4px;
-  right: 4px;
+  bottom: 10px;
+  font-weight: 600;
+  letter-spacing: -1;
+  right: 10px;
   border-radius: 20px;
   padding: 5px;
   font-size: small;
@@ -219,9 +221,10 @@ hr {
 }
 
 .titlee{
-  margin-left: 54px;
-  margin-right: 54px;
+  margin-left: 60px;
+  margin-right: 60px;
   font-size: 18px;
+  letter-spacing: 0px;
   font-family: 'Lato','regular';
   text-align: center;
   align-items: center;
@@ -229,30 +232,34 @@ hr {
 
 .heading {
   margin: 0%;
-  font-size: 35pt;
+  font-size: 48px;
   font-weight: 900;
 }
 .tablecontent{
   justify-content: center;
 }
 .table {
-  overflow-x: scroll;
   display: grid;
+  grid-gap: 20px;
   grid-template-columns: auto auto auto;
 }
 
 .quote {
-
-  color: rgb(105, 105, 105);
+  font-size: 19px;
+  margin-top: 10px;
+  line-height: 1.6;
+  color: rgb(146, 146, 146);
 }
 
 .city {
+  border-right: none;
   border-color: lightgray;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
 }
 
 .property {
+  border-right: none;
   border-color: lightgray;
 }
 
@@ -261,10 +268,12 @@ hr {
 }
 
 .search {
-  padding-left:40px ;
-  padding-right:40px ;
+  padding-left:30px ;
+  padding-right:30px ;
   background: #732dd9; color: white;
   border: none;
+  font-weight: 600;
+  font-size: 15px;
   text-transform: uppercase;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -305,40 +314,69 @@ select {
   text-align: center;
   align-items: center;
 }
+.maintitle{
+  margin-top: 23px;
+  margin-bottom: 0px;
 
+  font-size: x-large;
+  font-weight: 550;
+
+}
+.cardbottom{
+  margin-top: 13px;
+  margin-bottom: 13px;
+  text-transform: uppercase;
+  font-size: 70;
+}
 .topviewproject {
   border: 0px solid rgb(190, 190, 190);
 }
-
+.moveinnow p{
+  color: rgb(161, 161, 161);
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
 .topviewprojecttable {
+  margin-top: 20px ;
+  grid-gap: 25px;
   display: grid;
   grid-template-columns: auto auto auto auto;
 }
-
+.topviewprojecttablee {
+  margin-top: 20px ;
+  grid-gap: 25px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
 .moveinnowtable {
   display: grid;
   grid-template-columns: auto auto auto;
 
 }
-
+.cardsblk h2{
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-bottom: 0px;
+  font-size: x-large;
+}
+.cardsblk p{
+  margin-left: 40px;
+  margin-top: 10px;
+  color: rgb(154, 153, 153);
+}
 .cardsblk {
-
-  padding: 10px;
+  margin-bottom: 20px;
   color: black;
   position: relative;
-  border: rgb(237, 237, 237);
+  border: 1px rgb(228, 225, 225);
   border-style: solid;
-  border-radius: 20px;
-  margin: 10px;
+  border-radius: 10px;
+  
 }
 
 .card {
-  margin: 2px;
-  padding: 10px;
-  margin: 2px;
   border: 0px solid rgb(190, 190, 190);
   border-radius: 20px;
-  margin: 2px;
 }
 
 .mobilemenu:hover {
@@ -350,9 +388,6 @@ select {
 }
 .searchmenustyle:hover {
   cursor: pointer;
-}
-h2 {
-  margin-bottom: 1px;
 }
 
 .mobilemenu {
@@ -379,41 +414,42 @@ h2 {
     width: auto;;
     margin-left: 10px;
     margin-left: 10px;
-    
   }
   .cardsblk { 
-    padding: 10px;
     color: black;
     position: relative;
     border: rgb(237, 237, 237);
     border-style: solid;
     border-radius: 20px;
-    margin: 10px;
   }
 
-  #container {
-    padding-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-
-
+ 
   .table {
     overflow-x: scroll;
 
   }
   
+  .table::-webkit-scrollbar {
+    display: none;
+  }
 .topviewprojecttable {
+  margin-top: 20px ;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
 }
-
+.topviewprojecttable {
+  margin-top: 20px ;
+  display: grid;
+  overflow-x: scroll;
+}
+.topviewprojecttable::-webkit-scrollbar {
+  display: none;
+}
 }
 
 #firstsection {
   background-color: white;
-  height: 68vh;
+  height: 66vh;
   margin-top: 90px;
   display: grid;
   align-items: center;
@@ -423,7 +459,12 @@ h2 {
   #firstsection{
       margin-top: 90px;
     display: none;
-    height: 0vh;
+  }
+  .homepage{
+    margin-top: 70px;
+  }
+  #secondsection{
+    margin-top: 30pxpx;
   }
   .coverphoto{
     display: none;
@@ -444,19 +485,62 @@ h2 {
   body {
     font-size: 15px;
   }
+    .maintitle{
+      font-size: 20px;
+    }
+    .cardsblk{
+      width: 35vw;
+    }
+    .image2{
+      width:inherit;
+      margin-top: 2px;
+    }
+    .table{
+
+    }
+    .cardsblk h2{
+      margin-top: 15px;
+      font-size: 15px;
+      margin-left: 5px;
+    }
+    .cardsblk p{
+      font-size: 15px;
+      margin-left: 5px;
+    }
+  .topviewprojecttable {
+    margin-top: 20px ;
+    display: flex;
+    overflow-x: scroll;
     
-.topviewprojecttable {
-  display: grid;
-  grid-template-columns: auto auto;
-}
+  }
+  .topviewprojecttable::-webkit-scrollbar {
+    display: none;
+  }
+  .topviewprojecttablee {
+    margin-top: 20px ;
+    display: flex;
+    overflow-x: scroll;
+    
+  }
+  .topviewprojecttablee::-webkit-scrollbar {
+    display: none;
+  }
+  .card{
+    width: 168px;
+  }
+  .image{
+    width: 166px;
+    height: 166px;
+  }
+  .imagex{
+    width: 166px;
+    height: 166px;
+  }
 }
 
 
 @media only screen and (max-width: 720px) {
+
   
-.topviewprojecttable {
-  display: grid;
-  grid-template-columns: auto auto;
-}
 }
 
