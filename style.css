@@ -101,7 +101,9 @@ hr {
 .image {
   object-fit: cover;
   height: 29vh;
+  max-height: 283px;
   width: 100%;
+
   border-radius: 10px;
   
 }
@@ -127,41 +129,63 @@ hr {
     object-fit: cover;
   }
 }
-
+.explore{
+  display: flex;
+  width: 100%;
+}
+.explore .explorebtn svg{
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  
+}
+.explorebtn{
+  width: inherit;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 6px;
+  align-items: end;
+}
+.explorebtn button{
+  width: 24px;
+  height: 24px;
+  padding: 2px;
+  border-radius: 100%;
+  background: white;
+  border: 1px solid rgb(210, 210, 210);
+  margin-left: 6px;
+}
 .offersvg {
   color: red;
   height: 15px;
   width: 15px;
+  margin-right: 4px;
   position: relative;
   align-items: center;
-}
-
-.offer {
-
-  position: relative;
-  align-items: center;
-  color: #732dd9;
 }
 
 .roundbtn {
-  background-color: white;
+  background-color: #fff;
+  color: #732dd9;
   display: flex;
-
+  width: fit-content;
   align-items: center;
   flex: auto;
   width: fit-content;
   position: absolute;
   bottom: 10px;
-  font-weight: 600;
+  font-weight: 800;
   letter-spacing: -1;
   right: 10px;
   border-radius: 20px;
-  padding: 5px;
-  font-size: small;
+  padding: 5px 5px 5px 5px;
+  font-size:12px;
 }
 
 .cardtop {
   position: relative;
+  max-width:322px;
+  max-height: 283px;
 }
 
 .activea:hover {
@@ -302,6 +326,7 @@ select {
 }
 
 .contenttitle {
+  margin-top: 18px;
   display: grid;
   justify-content: center;
 
@@ -317,7 +342,7 @@ select {
 .maintitle{
   margin-top: 23px;
   margin-bottom: 0px;
-
+  width: 20%;
   font-size: x-large;
   font-weight: 550;
 
@@ -337,14 +362,14 @@ select {
   margin-bottom: 20px;
 }
 .topviewprojecttable {
-  margin-top: 20px ;
+  margin-top: 13px ;
   grid-gap: 25px;
   display: grid;
   grid-template-columns: auto auto auto auto;
 }
 .topviewprojecttablee {
   margin-top: 20px ;
-  grid-gap: 25px;
+  grid-gap: 15px;
   display: grid;
   grid-template-columns: auto auto auto auto auto;
 }
