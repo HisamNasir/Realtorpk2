@@ -317,7 +317,13 @@ hr {
 .price {
   border-color: lightgray;
 }
-
+.search a{
+  color: white;
+  border: none;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+}
 .search {
   padding-left: 30px;
   padding-right: 30px;
