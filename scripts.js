@@ -9,10 +9,9 @@ function firstsectionsearchbtn(){
 
     console.log("Your Selected City is: ",option1);
     console.log("Your Selected Project Type is: ", option2);
-    console.log("Your Selected Price is: ", option3)
+    console.log("Your Selected Price is: ", option3);
+
 
 
 }       
-    document.getElementById("demo1").innerHTML =  option1  ;
-    document.getElementById("demo2").innerHTML =  option2  ;
-    document.getElementById("demo3").innerHTML =  option3  ;
+   
