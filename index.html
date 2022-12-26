@@ -70,8 +70,8 @@
                             hidden costs.
                         </p>
                     </div>
-                    <div class="filter" >
-                        <select id="city" class="city" >
+                    <form action="searched.html" name="add" method="GET" class="filter" >
+                        <select name="city" id="city" class="city" >
                             <option value="Citydefault">City</option>
                             <option value="Hangu">Hangu</option>
                             <option value="Islamabad">Islamabad</option>
@@ -79,21 +79,20 @@
                             <option value="Peshawar">Peshawar</option>
                             <option value="Rawalpindi">Rawalpindi</option>
                         </select>
-
-                        <select id="property" class="property">
+                        <select name="property" id="property" class="property">
                             <option value="Project_typedefault">Project Type</option>
                             <option value="Comercial">Comercial</option>
                             <option value="Residentail">Residentail</option>
                             <option value="MixUse">MixUse</option>
                         </select>
-                        <select id="price" class="price">
+                        <select name="price" id="price" class="price">
                             <option value="Price_rangedefault">Price Range</option>
-                            <option value="aklac">10Lac-1Cr</option>
-                            <option value="teenlak">30Lac-3Cr</option>
-                            <option value="teencr">3Cr-6Cr</option>
+                            <option value="10Lac-1Cr">10Lac-1Cr</option>
+                            <option value="30Lac-3Cr">30Lac-3Cr</option>
+                            <option value="3Cr-6Cr">3Cr-6Cr</option>
                         </select>
                         <button onclick="firstsectionsearchbtn()"class="search"> Search</button>
-                    </div>
+                    </form>
                 </div>
 
             </div>
