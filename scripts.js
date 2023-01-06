@@ -7,4 +7,3 @@ function firstsectionsearchbtn(){
     var option2 = b.options[b.selectedIndex].text;
     var option3 = c.options[c.selectedIndex].text;
 }       
-   
