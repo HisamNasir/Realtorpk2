@@ -23,7 +23,7 @@
             <script></script>
             <div class="topnavright">
                 <a class="active">Home<div class="underlinenav"></div></a>
-                <a href="/offers.html" class="active">Projects <div class="underlinenav"></div></a>
+                <a class="active">Projects <div class="underlinenav"></div></a>
                 <a class="active">Offers <div class="underlinenav"></div></a>
                 <a class="active">About <div class="underlinenav"></div></a>
                 <a class="active">Blogs <div class="underlinenav"></div></a>
@@ -70,7 +70,7 @@
                             hidden costs.
                         </p>
                     </div>
-                    <form action="searched.html" name="add" method="GET" class="filter">
+                    <form name="add" method="GET" class="filter">
                         <select name="city" id="city" class="city">
                             <option value="Citydefault">City</option>
                             <option value="Hangu">Hangu</option>
@@ -103,64 +103,75 @@
         <div id="secondsection">
             <div id="containertop" class="topviewproject">
                 <h2 class="maintitle">Top Viewed Projects</h2>
+                <div>
+                    <div id="data-output" class="card topviewprojecttable">
+                        <div id="card">
 
-                    <!-- <div class="card">
-                        <div class="cardtop">
-                            <img class="image"
-                                src="https://realtorspk.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fs2s-mark%2Fimage%2Fupload%2Fc_scale%2Cw_600%2Cq_auto%2Cf_auto%2Fresources%2Fcylzea9zieywplgebtq7&w=1920&q=75"
-                                alt="">
-                            <div class="roundbtn"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="offersvg">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" />
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" />
-                                </svg>
-                                <div class="offer">Offers</div>
-                            </div>
-
-
-                            <div class="counter">
-                                <div class="percentagenum">82</div>
-                                <div class="percentageoutoff">/100</div>
-                            </div>
                         </div>
-                        <div class="cardbottom">FLORENZA MALL AND RESIDENCIA</div>
+
+                        <script>
+                                let query = window.location.search.replace('?', '').split('&')
+                                const resultsList = document.getElementById('results')
+                                let city = query.find((item) => { return item.includes('city=') })
+                                let price = query.find((item) => { return item.includes('price=') })
+                                let property = query.find((item) => { return item.includes('property=') })
+
+                                price = price.split('=')
+                                property = property.split('=')
+                                city = city.split('=')
+                                let elementcity = document.getElementById('city');
+                                elementcity.value = city[1];
+                                
+                                console.log(city[1]);
+////////////////////////////////////
+                            fetch("products.json")
+                                .then(function (responce) {
+                                    return responce.json();
+                                })
+                                .then(function (products) {
+                                    let placeholder = document.querySelector("#data-output");
+                                    let out = "";
+                                    console.log(products[0].Location)
+                                    for (let product of products) {
+                                        if(product.Location=='Islamabad'){
+                                        out += `
+                                        <div id="card">
+                                            <div class="cardtop">
+                                                <img class="image"
+                                                    src="${product.Image}"
+                                                    alt="">
+                                                <div class="roundbtn"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="offersvg">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" />
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" />
+                                                    </svg>
+                                                    <div class="offer">Offers</div>
+                                                </div>
+
+
+                                                <div class="counter">
+                                                    <div class="percentagenum">82</div>
+                                                    <div class="percentageoutoff">/100</div>
+                                                </div>
+                                            </div>
+                                            <div class="cardbottom">${product.Name}</div>
+                                            </div >
+                                        `;}
+                                        else{
+                                            document.getElementById("card").style.display='none';
+                                        }
+                                    }
+                                    placeholder.innerHTML = out;
+                                });
+
+                        </script>
+
+
+
                     </div>
-                    <div id="mallofhangu" class="card">
-                        <div class="cardtop">
-                            <img class="image"
-                                src="https://realtorspk.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fs2s-mark%2Fimage%2Fupload%2Fc_scale%2Cw_600%2Cq_auto%2Cf_auto%2Fresources%2Fcjd9ynv1mvk8ays5w9yq&w=1920&q=75"
-                                alt="">
-                            <div class="roundbtn"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="offersvg">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" />
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" />
-                                </svg>
-                                <div class="offer">Offers</div>
-                            </div>
-
-
-                            <div class="counter">82/100</div>
-
-
-                        </div>
-                        <div class="cardbottom">MALL OF HANGU</div>
-                    </div> -->
-                    <div>
-                        <div id="data-output" class="card topviewprojecttable">
-                            <div id="card">
-
-                            </div>
-
-                            <script src="test.js"></script>
-
-
-
-                        </div>
-                    </div>
+                </div>
 
 
             </div>
@@ -642,4 +653,43 @@
 </footer>
 
 </html>
-<!-- <script src="scripts.js"></script> -->
+<!-- <style>
+    .card{
+        display: none;
+    }
+
+</style> -->
+
+<script>
+    function firstsectionsearchbtn() {
+        var a = document.getElementById("city");
+        var b = document.getElementById("property");
+        var c = document.getElementById("price");
+        var option1 = a.options[a.selectedIndex].text;
+        var option2 = b.options[b.selectedIndex].text;
+        var option3 = c.options[c.selectedIndex].text;
+
+    }
+</script>
+<!-- <script>
+    let query = window.location.search.replace('?', '').split('&')
+    const resultsList = document.getElementById('results')
+    let city = query.find((item) => { return item.includes('city=') })
+    let price = query.find((item) => { return item.includes('price=') })
+    let property = query.find((item) => { return item.includes('property=') })
+
+    price = price.split('=')
+    property = property.split('=')
+    city = city.split('=')
+    let elementcity = document.getElementById('city');
+    elementcity.value = city[1];
+    let elementproperty = document.getElementById('property');
+    elementproperty.value = property[1];
+    let elementprice = document.getElementById('price');
+    elementprice.value = price[1];
+    console.log(city[1]);
+    console.log(property[1]);
+    console.log(price[1]);
+
+
+</script> -->
