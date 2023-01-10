@@ -628,7 +628,7 @@ footer button svg {
   margin-top: 13px;
   grid-gap: 25px;
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-auto-flow: column;
 }
 
 .topviewprojecttablee {
@@ -861,6 +861,7 @@ footer button svg {
 }
 
 #secondsection {
+
   margin-top: 30px;
 }
 

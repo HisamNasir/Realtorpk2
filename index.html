@@ -132,9 +132,10 @@
                                     let placeholder = document.querySelector("#data-output");
                                     let out = "";
                                     console.log(products[0].Location)
+                                    if(city[1]=='Islamabad'){
                                     for (let product of products) {
                                         if(product.Location=='Islamabad'){
-                                        out += `
+                                        out += `                                                                                                                                                                                                                                                
                                         <div id="card">
                                             <div class="cardtop">
                                                 <img class="image"
@@ -163,6 +164,8 @@
                                             document.getElementById("card").style.display='none';
                                         }
                                     }
+                                    }
+
                                     placeholder.innerHTML = out;
                                 });
 
