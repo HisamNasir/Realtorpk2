@@ -628,7 +628,7 @@ footer button svg {
   margin-top: 13px;
   grid-gap: 25px;
   display: grid;
-  grid-auto-flow: column;
+  grid-template-columns: auto auto auto auto;
 }
 
 .topviewprojecttablee {
@@ -674,6 +674,7 @@ footer button svg {
 }
 
 .card {
+  width: fit-content;
   border: 0px solid rgb(190, 190, 190);
   border-radius: 20px;
 }
@@ -861,7 +862,7 @@ footer button svg {
 }
 
 #secondsection {
-
+  
   margin-top: 30px;
 }
 
