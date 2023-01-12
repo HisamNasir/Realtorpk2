@@ -25,50 +25,46 @@
         "Image": "project/cylzea9zieywplgebtq7.jpeg"
     },
     {      "id": "006",
+        "Location": "Peshawar",
         "Name":"AH Tower",
         "Image": "project/dhzkv5zmfvfifhzbiows.jpeg"
     },
     {      "id": "007",
-        "Name":"Doha Emporium",
+        "Location": "Islamabad",
+        "Name":"Aimal Tower",
         "Image": "project/ds7vjhetsjkiobdgewxx.jpeg"
     },
     {      "id": "008",
-        "Name":"Doha Emporium",
+    "Location": "DI_Khan",
+        "Name":"AH City",
         "Image": "project/ewadvpli4pm4dre8uwvd.jpeg"
     },
     {      "id": "009",
-        "Name":"Doha Emporium",
+    "Location": "DI_Khan",
+        "Name":"DI Khan New City",
         "Image": "project/fwtxtyza4rpv6tc6yjiy.jpeg"
     },
     {      "id": "010",
-        "Name":"Doha Emporium",
+    "Location": "Islamabad",
+        "Name":"J7 Global Mall",
         "Image": "project/ihosps0em0tscvofrfvl.jpeg"
     },
     {      "id": "011",
-        "Name":"Doha Emporium",
+    "Location": "Islamabad",
+        "Name":"Aryan Tower",
         "Image": "project/mczful3a0gl2f4ur8ttg.jpeg"
     },
     {
         "id": "012",
-        "Name":"Doha Emporium",
+        "Location": "Islamabad",
+        "Name":"U_Tower",
         "Image": "project/qawtmvpaglv9s6fuuf6c.jpeg"
     },
     {
         "id": "013",
-        "Name":"Doha Emporium",
-        "Image": "project/roygjgj2htzid40zjdhb.jpeg"
-    },
-    {
-        "id": "014",
-        "Name":"Doha Emporium",
-        "Image": "project/smgunvrhea9rdx1scydi.jpeg"
-    },
-
-    {
-        "id": "015",
-        "Name":"Doha Emporium",
-        "Image": "project/vpfcbev2q8fuomxizzxc.jpeg"
+        "Location": "Murree",
+        "Name":"North Hills",
+        "Image": "project/kv4buopotodc0hiro0gd.jpg"
     }
-
     
 ]
