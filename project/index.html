@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #body{
+        margin: 0px;
+    }
+    #body.h1{
+        margin-bottom: 0px;
+    }
+    parentbox{
+
+        display: flex;
+    }
+    .childbox{
+        margin: 1px;
+        width: 2px; height: 2px;
+        border: 1pt solid black;
+    }
+</style>
+
+<body id="body">
+    <div id="parentbox">
+        <h1 id="numberofbox">
+
+        </h1>
+        <hr>
+        
+    </div>
+  
+<hr>    
+
+    <h1>Top X</h1>
+    <input  type="text" id="topx">
+    <h1>Top Y</h1>
+    <input  type="text" id="topy">
+    <h1>Bottom X</h1>
+    <input  type="text" id="bottomx">
+    <h1>Bottom Y</h1>
+    <input  type="text" id="bottomy">
+
+</body>
+</html>
+<script>
+    document.getElementsByClassName("parentbox");
+
+    for(var i=0;i<=65;i++){  
+        document.getElementById("numberofbox").innerHTML=`Total Box: `+66*66;
+
+
+    };
+</script>
