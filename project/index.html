@@ -68,16 +68,15 @@
 -->
 </body>
 </html>
+
+
+
+<!-- 1st attempt  -->
 <script>
-
-
-    
         document.getElementById("numberofbox").innerHTML=`Total Box: `+66*66;
         document.getElementById("numberofboxx31").innerHTML=`Total Pixels: `+32;
         // 4356
         
-
-
          for(let i=-261;i<=4095;i++){
             
              for(let x=1; x<=32; x++){
@@ -86,34 +85,15 @@
          }
         
 </script>
+
+
+<!-- DUDI's code  -->
 <script>
-
-//     if (x < 0) {
-//         zoneX = Math.floor(x / 32) - 1;
-//     }
-//     else {
-//         zoneX = Math.floor(x / 32);
-//     }
-
-//     if (y < 0) {
-//         zoneY = Math.floor(y / 32) - 1;
-//     }
-//     else {
-//         zoneY = Math.floor(y / 32);
-//     }
-
-
-
-
-
-
     let zone = 1;
     let startX = 0;
     let startY = 0;
     var x=1991;
     var y=2041;
-    
-
     if (x < 0) {
         startX = Math.floor(x / 32) - 1;
     }
@@ -128,13 +108,14 @@
         startY = Math.floor(y / 32);
     }
     zone = startX + (startY * 64);
-
     document.getElementById("parentbox").innerHTML=zone ;
-    
-    //     startX = Math.floor(x / 31);
+</script>
 
-    //     startY = Math.floor(y / 31);
+
+<!-- 2nd attempt -->
+<script>
+    // startX = Math.floor(x / 31);
+    // startY = Math.floor(y / 31);
     // zone = startX + (startY * 66);
     // document.getElementById("parentbox").innerHTML=zone-261 ;
-
 </script>
