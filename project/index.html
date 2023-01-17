@@ -13,9 +13,13 @@
     #body.h1{
         margin-bottom: 0px;
     }
-    parentbox{
+    #parentbox{
 
         display: flex;
+        margin: 20px;
+        font-size: xx-large;
+        font-weight: 700;
+        color: red;
     }
     .childbox{
         margin: 1px;
@@ -25,33 +29,74 @@
 </style>
 
 <body id="body">
-    <div id="parentbox">
-        <h1 id="numberofbox">
+    <h1 id="numberofbox" >
 
-        </h1>
-        <hr>
+    </h1>
+    <h1 id="numberofboxx31">
+
+    </h1>
+    <div id="parentbox">
+
+        
         
     </div>
   
 <hr>    
 
-    <h1>Top X</h1>
-    <input  type="text" id="topx">
-    <h1>Top Y</h1>
-    <input  type="text" id="topy">
-    <h1>Bottom X</h1>
-    <input  type="text" id="bottomx">
-    <h1>Bottom Y</h1>
-    <input  type="text" id="bottomy">
+<!-- let zone = 0;
+    let zoneX = 0;
+    let zoneY = 0;
 
+    if (x < 0) {
+        zoneX = Math.floor(x / 32) - 1;
+    }
+    else {
+        zoneX = Math.floor(x / 32);
+    }
+
+    if (y < 0) {
+        zoneY = Math.floor(y / 32) - 1;
+    }
+    else {
+        zoneY = Math.floor(y / 32);
+    }
+
+    zone = zoneX + (zoneY * 64);
+
+    return zone;
+
+-->
 </body>
 </html>
 <script>
-    document.getElementsByClassName("parentbox");
 
-    for(var i=0;i<=65;i++){  
+
+    
         document.getElementById("numberofbox").innerHTML=`Total Box: `+66*66;
+        document.getElementById("numberofboxx31").innerHTML=`Total Pixels: `+32;
+        // 4356
+        
 
 
-    };
+         for(let i=-261;i<=4095;i++){
+            
+             for(let x=1; x<=32; x++){
+                
+             }
+         }
+        
+</script>
+<script>
+    let zone = 1;
+    let zoneX = 1;
+    let zoneY = 1;
+    var x=1991;
+    var y=2041;
+    
+        zoneX = Math.floor(x / 31);
+
+        zoneY = Math.floor(y / 31);
+    zone = zoneX + (zoneY * 66);
+    document.getElementById("parentbox").innerHTML=zone-261 ;
+
 </script>
