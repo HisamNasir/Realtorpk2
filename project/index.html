@@ -87,16 +87,54 @@
         
 </script>
 <script>
+
+//     if (x < 0) {
+//         zoneX = Math.floor(x / 32) - 1;
+//     }
+//     else {
+//         zoneX = Math.floor(x / 32);
+//     }
+
+//     if (y < 0) {
+//         zoneY = Math.floor(y / 32) - 1;
+//     }
+//     else {
+//         zoneY = Math.floor(y / 32);
+//     }
+
+
+
+
+
+
     let zone = 1;
-    let zoneX = 1;
-    let zoneY = 1;
+    let startX = 0;
+    let startY = 0;
     var x=1991;
     var y=2041;
     
-        zoneX = Math.floor(x / 31);
 
-        zoneY = Math.floor(y / 31);
-    zone = zoneX + (zoneY * 66);
-    document.getElementById("parentbox").innerHTML=zone-261 ;
+    if (x < 0) {
+        startX = Math.floor(x / 32) - 1;
+    }
+    else {
+        startX = Math.floor(x / 32);
+    }
+
+    if (y < 0) {
+        startY = Math.floor(y / 32) - 1;
+    }
+    else {
+        startY = Math.floor(y / 32);
+    }
+    zone = startX + (startY * 64);
+
+    document.getElementById("parentbox").innerHTML=zone ;
+    
+    //     startX = Math.floor(x / 31);
+
+    //     startY = Math.floor(y / 31);
+    // zone = startX + (startY * 66);
+    // document.getElementById("parentbox").innerHTML=zone-261 ;
 
 </script>
